@@ -1,5 +1,6 @@
 package homebrewprojects.com.savingcount;
 
+import android.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,24 +11,17 @@ import android.widget.TextView;
 
 public class SeptemberProjectMainActivity extends ActionBarActivity {
 
-    public TextView txtMake;
-    public TextView txtModel;
-    public TextView txtHp;
-    public TextView txtZeroToSixty;
-    public TextView txtPrice;
-    public ImageView imageViewCar;
+//    public TextView txtMake;
+//    public TextView txtModel;
+//    public TextView txtHp;
+//    public TextView txtZeroToSixty;
+//    public TextView txtPrice;
+//    public ImageView imageViewCar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_september_project_main);
-
-        txtMake = (TextView) findViewById(R.id.txt_make);
-        txtModel = (TextView) findViewById(R.id.txt_model);
-        txtHp = (TextView) findViewById(R.id.txt_hp);
-        txtZeroToSixty = (TextView) findViewById(R.id.txt_zero_sixty);
-        txtPrice = (TextView) findViewById(R.id.txt_price);
-        imageViewCar = (ImageView) findViewById(R.id.imageViewCar);
 
         if(findViewById(R.id.fragment_container) != null) {
 
@@ -35,11 +29,11 @@ public class SeptemberProjectMainActivity extends ActionBarActivity {
             if (savedInstanceState != null) {
                 return;
             }
-
-            
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.add(R.id.fragment_container, new CarDetails());
+            ft.commit();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
