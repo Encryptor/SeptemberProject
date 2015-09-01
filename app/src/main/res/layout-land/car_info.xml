@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make:"
+        android:id="@+id/lbl_make"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_above="@+id/lbl_model"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_make"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignTop="@+id/lbl_make"
+        android:layout_toRightOf="@+id/lbl_make"
+        android:layout_toEndOf="@+id/lbl_make" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model:"
+        android:id="@+id/lbl_model"
+        android:layout_above="@+id/lbl_hp"
+        android:layout_alignLeft="@+id/lbl_make"
+        android:layout_alignStart="@+id/lbl_make"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_model"
+        android:layout_alignBottom="@+id/lbl_model"
+        android:layout_alignLeft="@+id/txt_make"
+        android:layout_alignStart="@+id/txt_make" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HP:"
+        android:id="@+id/lbl_hp"
+        android:layout_above="@+id/lbl_zeroToSixty"
+        android:layout_alignLeft="@+id/lbl_model"
+        android:layout_alignStart="@+id/lbl_model"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_hp"
+        android:layout_alignBottom="@+id/lbl_hp"
+        android:layout_alignLeft="@+id/txt_model"
+        android:layout_alignStart="@+id/txt_model" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0-60:"
+        android:id="@+id/lbl_zeroToSixty"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/lbl_hp"
+        android:layout_alignStart="@+id/lbl_hp"
+        android:layout_marginTop="26dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_zeroToSixty"
+        android:layout_alignBottom="@+id/lbl_zeroToSixty"
+        android:layout_alignLeft="@+id/txt_hp"
+        android:layout_alignStart="@+id/txt_hp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price:"
+        android:id="@+id/lbl_price"
+        android:layout_below="@+id/lbl_zeroToSixty"
+        android:layout_alignLeft="@+id/lbl_zeroToSixty"
+        android:layout_alignStart="@+id/lbl_zeroToSixty"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/txt_price"
+        android:layout_alignBottom="@+id/lbl_price"
+        android:layout_alignLeft="@+id/txt_zeroToSixty"
+        android:layout_alignStart="@+id/txt_zeroToSixty" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewCar"
+        android:layout_above="@+id/lbl_model"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
